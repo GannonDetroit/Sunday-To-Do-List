@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  // your app state should be stored here. You may use more than what is currently provided if you feel you need it.
+  const [todo, setTodo] = useState('')
+  const [todoList, setTodoList] = useState([])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* app title */}
+      <h1>The Sunday To-Do List</h1>
+
+      {/* to do input component */}
+
+
+      {/* to do list view component */}
+
+      
     </div>
   );
 }
