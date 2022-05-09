@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
 
 //the input and submit of the todo app.
 const TodoInput = ({ setInputText, todos, setTodos, inputText }) => {
@@ -15,9 +20,9 @@ const TodoInput = ({ setInputText, todos, setTodos, inputText }) => {
 
     <form>
       <input value={inputText} onChange={inputTextHandler} type="text" />
-      <button onClick={submitTodoHandler} type="submit">
-        Submit
-      </button>
+      <Button variant="contained" onClick={submitTodoHandler} type="submit">
+        Add Task
+      </Button>
       <div className="select"></div>
     </form> // feel free to delete this temporary line, but you'll want to keep the divs.
   );

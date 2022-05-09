@@ -1,5 +1,10 @@
 import React from "react";
 import TodoItem from "./todoItem";
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
 
 // the container of all the todos for the app with a count on top and clear all button on the bottom.
 const TodoList = ({ todos, setTodos }) => {
@@ -25,7 +30,7 @@ const TodoList = ({ todos, setTodos }) => {
             todo={todo}
           />
         ))}
-        <button onClick={deleteHandler2}>Delete All</button>
+        <Button variant="outlined" startIcon={<DeleteIcon />} color="success" onClick={deleteHandler2}>Delete All</Button>
       </ul>
       {/* // feel free to delete this temporary line, but you'll want to keep the divs. */}
     </div>
