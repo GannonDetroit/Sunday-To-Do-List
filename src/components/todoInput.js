@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
+import React from "react";
+
 import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
-import IconButton from '@mui/material/IconButton';
+
 
 //the input and submit of the todo app.
 const TodoInput = ({ setInputText, todos, setTodos, inputText }) => {

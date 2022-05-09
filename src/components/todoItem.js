@@ -1,10 +1,10 @@
 import React from "react";
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
-import Grid from '@mui/material/Grid';
+
 
 // an item in the todo list of the app.
 const TodoItem = ({ text, todo, todos, setTodos }) => {
